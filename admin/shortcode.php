@@ -242,7 +242,7 @@ function yinstagram_get_own_images($access_token, $display_images, $number_of_im
           if ($i == $number_of_images )
             break;
           $i++;
-          $next_url = ($responses->pagination->next_url) ? $responses->pagination->next_url : null;
+           $next_url = (isset($responses->pagination->next_url)) ? $responses->pagination->next_url : null;
         }
       }
     }
